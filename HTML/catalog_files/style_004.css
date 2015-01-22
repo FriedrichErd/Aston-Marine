@@ -1,0 +1,21 @@
+.astronmarine-catalog.catalog {
+    
+}
+
+.astronmarine-catalog.catalog .sort {
+    float: right;
+    margin-bottom: 20px;
+}
+
+.astronmarine-catalog.catalog .filter {
+    float: left;
+    width: 236px;
+    border: 6px solid #f2f2f2;
+    padding: 15px;
+    margin-right: 80px;
+}
+
+.astronmarine-catalog.catalog .content{
+    float: right;
+    width: 940px;
+}

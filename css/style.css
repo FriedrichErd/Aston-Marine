@@ -14,6 +14,7 @@ display: block
 }
 aside {
 float: right;
+width: 364px;
 }
 sup {
 font-size: small;
@@ -26,7 +27,10 @@ color: #88b3c2;
 padding-bottom: 5px;
 padding-top: 30px;
 }
-
+ul {
+list-style: none;
+padding: 0;
+}
 .header {
 text-align: center;
 width: 1600px;
@@ -45,6 +49,7 @@ padding: 0;
 #page-wrapper {
 min-height: 100%;
 min-width: 1298px;
+
 }
 #main-wrapper {
 height: 700px;
@@ -64,11 +69,18 @@ height: 135px;
 width: 1298px;
 margin: 0 auto;
 position: relative;
+border-style: solid;
+border-width: 0px 0px 20px;
+-moz-border-image: url(../images/volna-3.png) 0 0 20 repeat stretch;
+-webkit-border-image: url(../images/volna-3.png) 0 0 20 repeat stretch;
+-o-border-image: url(../images/volna-3.png) 0 0 20 repeat stretch;
+border-image: url(../images/volna-3.png) 0 0 20 repeat stretch;
 }
 ul.mainmenu, ul.mainmenu-other 
 {position: absolute;
 left: 185px;
 top: 52px;
+
 }
 ul.mainmenu li,  ul.mainmenu-other li{
 display: inline; 
@@ -84,8 +96,7 @@ color: #afc1d1;
 padding-right: 25px;
 padding-left: 20px;
 }
-
-#main > nav:nth-child(1) > ul > li > a:hover {
+#main > nav > ul > li > a:hover {
 border-bottom: 2px dotted #afc1d1;
 }
 ul.mainmenu-other a {
@@ -97,6 +108,9 @@ text-decoration: none;
 color: #fff;
 padding-right: 25px;
 padding-left: 20px;
+}
+#main-other > nav > ul > li > a:hover {
+border-bottom: 4px solid #fff;
 }
 ul.mainmenu li.last, ul.mainmenu-other li.last  {
 border: 0;
@@ -193,7 +207,9 @@ top: 590px;
 
 .address-cont {
 float: left;
-width: 380px;
+width: 415px;
+border-right: 1px solid #E4E4E4;
+padding-right: 0px;
 }
 .address-head {
 font-family: 'Open Sans', Tahoma, sans-serif;
@@ -236,10 +252,11 @@ color: #e6a478;
 .address-preds-cont {
 float: left;
 width: 380px;
+padding-left: 100px;
 }
 #cont-menu-social-networks {
 float: right;
-width: 400px;
+width: 364px;
 }
 
 /* workarea */
@@ -296,6 +313,7 @@ padding-top: 10px;
 width: 919px;
 float: left;
 padding-right: 15px;
+padding-bottom: 50px;
 }
 .astronmarine-news-list.index-news {
 background: #a9adb0;
@@ -455,7 +473,27 @@ background: #cbddf2;
 }
 
 
+/* search */
+.search {
+width: 300px;
+height: 30px;
+border: 1px solid #A4A4A4;
+background: #F4F3F3;
+margin-top: 30px;
+background: url(../images/icon-search.png);
+background-repeat: no-repeat;
+background-position: 98% 50%;
+}
 
+
+.map {
+background: aliceblue;
+width: 100%;
+height: 410px;
+margin-top: 50px;
+margin-bottom: 30px;
+float: left;
+}
 
 /* slider-store */
 
@@ -484,6 +522,7 @@ width: 220px;
 opacity: 0.7;
 text-align: center;
 width: 180px;
+margin: auto;
 }
 .item2:hover .item2-pic {
 opacity: 1;
@@ -572,7 +611,621 @@ clear: both;
 }
 
 
+/* news */
+
+.years {
+font-family: PT Sans, sans-serif;
+color: #88b3c2;
+font-weight: 100;
+font-size: 16px;
+}
+.years a {
+color: #88b3c2;
+}
+.astronmarine-news-list.news .news-item {
+font-size: 18px;
+padding-bottom: 25px;
+}
+.astronmarine-news-list.news .title a {
+color: #8eb6c4;
+font-weight: bold;
+}
+.astronmarine-news-list.news .preview-text {
+padding-top: 20px;
+color: #b3b4b8;
+}
+.show-more {
+text-transform: uppercase;
+font-size: 15px;
+font-weight: 100;
+text-align: center;
+display: block;
+padding-bottom: 35px;
+}
+.show-more a {
+color: #8eb6c4;
+}
+.astronmarine-news-list.news .image {
+float: left;
+border: 1px solid #adb1b4;
+border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-radius: 5px 5px 5px 5px;
+margin: 0 40px 10px 0;
+}
+.news-month {
+font-size: 19px;
+border: 1px solid white;
+padding: 2px;
+text-align: center;
+font-weight: 100;
+margin-top: -15px;
+}
+.news-date {
+color: white;
+text-transform: uppercase;
+background: #488ba0;
+padding: 5px;
+font-size: 60px;
+width: 65px;
+font-weight: 700;
+float: left;
+margin-left: -115px;	
+}
+
+
+/* dillers */
+
+.districts {
+font-family: 'PT Sans', Tahoma, sans-serif;
+font-size: 18px;
+text-transform: uppercase;
+color: #88B3C2;
+text-decoration: underline;
+padding-top: 10px;
+}
+.dist-both {
+min-height: 150px;
+padding-top: 10px;
+}
+.dist-head {
+color: #75777B;
+font-size: 14px;
+text-decoration: none;
+font-family: 'Open Sans', sans-serif;
+font-weight: 900;
+padding-bottom: 0px;
+display: block;
+}
+.dillers-map {
+background: url(../images/map-3.png);
+width: inherit;
+height: 350px;
+background-position: 10%;
+background-repeat: no-repeat;
+}
+
+/* catalog */
+
+.sort {
+float: right;
+margin-bottom: 20px;
+font-family: "Myriad Pro";
+color: #8eb6c4;
+font-size: 16px;
+}
+.sort .property {
+float: right;
+margin-left: 5px;
+padding-right: 5px;
+background: url("images/sort.png") right 8px no-repeat;
+}
+.sort a {
+font-family: "Myriad Pro";
+color: #8eb6c4;
+font-size: 16px;
+border-bottom: 1px dotted #8eb6c4;
+text-decoration: none;
+}
+.clear {
+clear: both;
+}
+.astronmarine-catalog.catalog .filter {
+float: left;
+width: 236px;
+border: 6px solid #f2f2f2;
+padding: 15px;
+margin-right: 20px;
+}
+.filter_vertical {
+}
+.filter_vertical .filter_section {
+position: relative;
+}
+form {
+display: block;
+margin-top: 0em;
+}
+.filter_vertical .filter_container {
+padding: 0 6px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+width: 100%;
+}
+.filter_vertical .filter_container_title {
+color: #8eb6c4;
+text-transform: uppercase;
+font-size: 18px;
+font-family: "Myriad Pro";
+display: inline-block;
+margin-bottom: 20px;
+}
+.filter_vertical .filter_container_title {
+
+}
+.filter_vertical .filter_block span {
+display: block;
+min-height: 30px;
+padding-bottom: 5px;
+}
+.filter_vertical .filter_block span input[type=checkbox] {
+position: relative;
+/* bottom: 6px; */
+/* position: absolute; */
+/* left: 11px; */
+}
+.filter_vertical .filter_block span input[type="checkbox"] + label {
+background: url("images/checkbox-sprite.gif") 0 0 no-repeat;
+padding-left: 30px;
+font-size: 14px;
+font-family: "Myriad Pro";
+color: #8ab0be;
+}
+.filter_vertical .filter_control_section {
+text-align: left;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.filter_vertical .filter_popup_result.right {
+left: 102%;
+}
+.filter_vertical .filter_popup_result {
+position: absolute;
+display: none;
+height: 33px;
+border-top: 1px solid #c0d6dc;
+border-right: 1px solid #c0d7dd;
+border-bottom: 1px solid #c0d6dc;
+border-left: 1px solid #c0d7dd;
+border-radius: 3px;
+background: #fff;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+color: #3f3f3f;
+font-weight: normal;
+font-size: 13px;
+line-height: 33px;
+padding: 0 10px;
+margin-left: 10px;
+margin-top: -7px;
+z-index: 1100;
+white-space: nowrap;
+}
+.search-catalog {
+width: 340px;
+height: 30px;
+border: 1px solid #A4A4A4;
+background-color: #B3B3B3;
+background: url(../images/icon-search.png);
+background-repeat: no-repeat;
+background-position: 98% 50%;
+margin-right: 400px;
+border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-radius: 5px 5px 5px 5px;
+}
+
+.astronmarine-satalog-section-list.default {
+font-family: "Myriad Pro";
+}
+.filter-header {
+font-size: 18px;
+color: #8eb6c4;
+text-transform: uppercase;
+margin-bottom: 10px;
+width: 230px;
+height: 30px;
+display: block;
+}
+.astronmarine-satalog-section-list.default table {
+width: 100%;
+}
+.astronmarine-satalog-section-list.default .section {
+text-align: left;
+}
+.astronmarine-satalog-section-list.default table td {
+height: 30px;
+vertical-align: central;
+}
+.astronmarine-satalog-section-list.default .count {
+font-size: 18px;
+text-align: right;
+color: #eb8a58;
+}
+.astronmarine-catalog.catalog .content {
+float: right;
+width: 940px;
+}
+.astronmarine-catalog-section.default {
+}
+.astronmarine-catalog-section.default .item.no-margin {
+margin: 0;
+}
+.astronmarine-catalog-section.default .item .picture {
+margin-bottom: 15px;
+border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-radius: 5px 5px 5px 5px;
+border: 0px solid #000000;
+overflow: hidden;
+-webkit-box-shadow: 3px 3px 5px 0px rgba(100, 100, 100, 0.4);
+-moz-box-shadow:    3px 3px 5px 0px rgba(100, 100, 100, 0.4);
+box-shadow:         3px 3px 5px 0px rgba(100, 100, 100, 0.4);
+width: 205px;
+height: 160px;
+}
+.astronmarine-catalog-section.default .item .name {
+margin-bottom: 5px;
+}
+.astronmarine-catalog-section.default .item .name a {
+font-size: 18px;
+color: #3c82ae;
+}
+.astronmarine-catalog-section.default .item .price {
+float: left;
+font-size: 20px;
+color: #ea6b25;
+}
+.astronmarine-catalog-section.default .item .currency {
+font-size: 18px;
+}
+.astronmarine-catalog-section.default .item .size {
+margin-top: 5px;
+margin-bottom: 40px;
+border-top: 1px solid #f2f2f2;
+font-family: 'PT Sans', Tahoma, sans-serif;
+font-size: 12px;
+color: #8EB6C4;
+}
+.astronmarine-catalog-section.default .item .size .height {
+width: 36px;
+float: left;
+padding-left: 15px;
+text-align: right;
+height: 35px;
+padding-left: 20px;
+padding-top: 20px;
+background: url(../images/arrow-h.png) left center no-repeat;
+}
+.astronmarine-catalog-section.default .item .size .width {
+width: 42px;
+float: left;
+text-align: right;
+height: 35px;
+padding-left: 33px;
+padding-top: 20px;
+border-left: 1px solid #F2F2F2;
+border-right: 1px solid #F2F2F2;
+background: url(../images/arrow-w.png) 8px center no-repeat;
+}
+.astronmarine-catalog-section.default .item .size .length {
+width: 42px;
+text-align: right;
+height: 35px;
+float: left;
+padding-top: 20px;
+padding-left: 30px;
+background: url(../images/arrow-l.png) 5px center no-repeat;
+}
+.astronmarine-catalog-section.default .item {
+width: 205px;
+float: left;
+margin-left: 40px;
+font-family: "Myriad Pro";
+}
+#astronmarine-next-page {
+font-size: 14px;
+color: #8eb6cf;
+text-decoration: underline;
+text-transform: uppercase;
+cursor: pointer;
+position: relative;
+}
+.astronmarine-satalog-section-list.default .section a {
+font-size: 14px;
+color: #8eb6c4;
+}
+.catalog-item-name a {
+font-family: 'Open Sans', sans-serif;
+font-size: 17px;
+color: #3c82ae;
+}
+.offers-catalog {
+margin-top: 50px;
+width: 278px;
+margin-bottom: 100px;
+}
+.all-btn a {
+background: #4186af;
+width: 25px;
+float: right;
+padding: 4px;
+font-size: 18px;
+margin-top: -45px;
+color: white;
+text-decoration: none;
+}
+.all-btn a:hover {
+background: #cbddf2;
+} 
+.offers-catalog-item {
+border: 6px solid #fff;
+padding: 20px;
+}
+.offers-catalog-item:hover {
+border: 6px solid #E3F1F3;
+}
+.offers-catalog-icons {
+text-align: center;
+padding-top: 15px;
+}
+.item-icon {
+width: 70px;
+padding: 6px;
+display: inline;
+}
+.catalog-sidebar {
+float: left;
+}
+.item2-name {
+text-align: center;	
+}
+.offers-catalog-more {
+font-family: Arial;
+color: #ffffff;
+font-size: 10px;
+background: #4e8da2;
+padding: 10px 10px 10px 10px;
+text-decoration: none;
+width: 85px;
+margin: 27px auto;
+text-align: center;
+display: none;
+}
+.offers-catalog-item:hover > div.offers-catalog-more {
+font-family: Arial;
+color: #ffffff;
+font-size: 10px;
+background: #4e8da2;
+padding: 10px 10px 10px 10px;
+text-decoration: none;
+width: 85px;
+margin: 27px auto;
+text-align: center;
+display: block;
+}
+
+
+/* itemcard */
+
+.pics-area {
+float: left;
+width: 620px;
+}
+.main-img {
+width: 619px;
+height: 355px;
+border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-radius: 5px 5px 5px 5px;
+border: 0px solid #000000;
+padding-bottom: 10px;
+}
+#item-pics-slider {
+width: 610px;
+border: 5px solid #F2F2F2;
+height: 115px;
+}
+.item4-pic {
+height: 115px;
+}
+#item-pics-slider > div.owl-controls > div.owl-nav {
+display: inline-flex;
+color: white;
+font-family: Myriad Pro, sans-serif;
+font-size: 15px;
+width: 610px;
+position: relative;
+}
+#item-pics-slider > div.owl-controls > div.owl-nav > div.owl-prev {
+padding: 5px;
+width: 20px;
+background: #37829b;
+position: absolute;
+left: 0;
+bottom: 59px;
+}
+#item-pics-slider > div.owl-controls > div.owl-nav > div.owl-prev:hover {
+background: #E3F1F3
+}
+#item-pics-slider > div.owl-controls > div.owl-nav > div.owl-next {
+padding: 5px;
+width: 20px;
+background: #37829b;
+position: absolute;
+right: 0;
+bottom: 59px;
+}
+#item-pics-slider > div.owl-controls > div.owl-nav > div.owl-next:hover {
+background: #E3F1F3;
+}
+.descr {
+float: right;
+width: 300px;
+color: #AFB1B5;
+font-size: 12px;
+text-decoration: none;
+line-height: 20px;
+font-family: 'Open Sans', sans-serif;
+}
+.zak-btn a {
+font-family: Arial;
+color: #ffffff;
+font-size: 15px;
+background: #4e8da2;
+padding: 10px 20px 10px 20px;
+margin: 0 19px;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+display: inline-block;
+float: right;
+position: absolute;
+top: -10px;
+left: 170px;
+}
+.zak-btn a:hover {
+background: #cbddf2;
+}
+.descr-head {
+font-family: 'Open Sans', sans-serif;
+font-size: 17px;
+color: #88B3C2;
+display: block;
+padding-top: 15px;
+padding-bottom: 10px;
+}
+.add-descr {
+float: left;
+}
+.descr-price {
+position: relative;
+margin-bottom: 20px;
+font-size: 30px;
+color: #ea6b25;	
+}
+.add-descr {
+float: left;
+color: #AFB1B5;
+font-size: 12px;
+text-decoration: none;
+line-height: 20px;
+font-family: 'Open Sans', sans-serif;
+padding-bottom: 30px;
+}
+.descr-row {
+float: left;
+width: 260px;
+}
+
+
+/* scrollup */
+
+#scrollup {
+position: fixed;
+right: 0px;
+text-align: center;
+width: 150px;
+height: 15px;
+font-family: 'Open Sans', Tahoma, sans-serif;
+font-size: 17px;
+text-decoration: underline;
+color: #76B8CD;
+opacity: 0.8;
+padding: 15px 10px 10px;
+background: #FFF;
+border: 1px solid rgb(187, 189, 192);
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+bottom: 10px;
+display: none;
+cursor: pointer;
+}
+
+
+/* spoiler */
+
+.spoiler {
+  display: none;
+}
+.spoiler7 {
+  display: none;
+}
+ 
+class="dynamic"
+a.dynamic7 {
+    border-bottom: 1px dashed #0066CC;
+    text-decoration: none;
+}
+.spoiler6 {
+  display: none;
+}
+ 
+class="dynamic"
+a.dynamic6 {
+    border-bottom: 1px dashed #0066CC;
+    text-decoration: none;
+}
+.spoiler5 {
+  display: none;
+}
+ 
+class="dynamic"
+a.dynamic5 {
+    border-bottom: 1px dashed #0066CC;
+    text-decoration: none;
+}
+.spoiler4 {
+  display: none;
+}
+ 
+class="dynamic"
+a.dynamic4 {
+    border-bottom: 1px dashed #0066CC;
+    text-decoration: none;
+}
+.spoiler3 {
+  display: none;
+}
+ 
+class="dynamic"
+a.dynamic3 {
+    border-bottom: 1px dashed #0066CC;
+    text-decoration: none;
+}
+.spoiler2 {
+  display: none;
+}
+ 
+class="dynamic"
+a.dynamic2 {
+    border-bottom: 1px dashed #0066CC;
+    text-decoration: none;
+}
+.spoiler1 {
+  display: none;
+}
+ 
+class="dynamic"
+a.dynamic1 {
+    border-bottom: 1px dashed #0066CC;
+    text-decoration: none;
+}
+
+
 /* sidebar */
+
 #right-column.show-right {
 display: block;
 width: 364px;
@@ -600,6 +1253,8 @@ height: 48px;
 margin: 25px 0;
 background: #a9adb0 url(../images/icon-focus.png) 20px center no-repeat;
 padding-left: 70px;
+float: inherit;
+width: 294px;
 }
 .astronmarine-how-to-choose a {
 font-size: 18px;
@@ -677,6 +1332,49 @@ background: #cbddf2;
 background: #cbddf2;
 }
 
+
+.spec-act {
+width: 364px;
+height: 250px;
+background: #f19f71;
+float: inherit;
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #000000;
+}
+.spec-act-proc {
+font-size: 60px;
+font-family: PT Sans, sans-serif;
+font-weight: 800;
+color: white;
+display: block;
+margin-top: 6px;
+text-transform: uppercase;
+background: #a9adb0;
+width: 155px;
+margin-left: -28px;
+}
+.spec-act-txt {
+font-size: 35px;
+font-family: Myriad Pro, sans-serif;
+font-weight: 600;
+color: white;
+display: block;
+margin-top: 30px;
+margin-left: 20px;
+text-transform: uppercase;
+}
+.spec-act-slogan {
+font-size: 70px;
+font-family: Myriad Pro, sans-serif;
+font-weight: 600;
+color: white;
+opacity: 0.5;
+display: block;
+margin-top: 5px;
+margin-left: 130px;
+}
 
 /* footer */
 

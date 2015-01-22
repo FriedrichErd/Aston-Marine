@@ -1,0 +1,43 @@
+.astonmarine-menu.top {
+    margin: 0;
+    padding: 0;
+}
+
+.astonmarine-menu.top li {
+    display: inline;
+    padding: 0 25px;
+}
+
+.astonmarine-menu.top li a {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+
+.astonmarine-menu.top li a.selected {
+    border-bottom: 7px solid #fff;
+}
+
+#main-wrapper .astonmarine-menu.top li {
+    border-right: 2px dotted #afc1d1;
+}
+
+#main-wrapper .astonmarine-menu.top li a{
+    color: #afc1d1;
+}
+
+#header-wrapper .astonmarine-menu.top li {
+    border-right: 2px dotted #fff;
+}
+
+#header-wrapper .astonmarine-menu.top li a {
+    color: #fff;
+}
+
+#main-wrapper .astonmarine-menu.top li:last-child,
+#header-wrapper .astonmarine-menu.top li:last-child {
+    border-right: 0;
+}

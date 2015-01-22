@@ -1,0 +1,37 @@
+.astonmarine-menu.footer {
+    min-height: 200px;
+    background: url("images/separator.png") left top no-repeat;
+}
+
+.astonmarine-menu.footer ul {
+    margin: 0;
+    padding-left: 27px;
+    list-style: none;
+}
+
+.astonmarine-menu.footer li {
+    margin: 4px 0;
+}
+
+.astonmarine-menu.footer li:first-child,
+.astonmarine-menu.footer li.strong:first-child {
+    margin-top: 0;
+}
+
+.astonmarine-menu.footer li a {
+    color: #808285;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.astonmarine-menu.footer li.strong {
+    margin: 12px 0;
+}
+
+.astonmarine-menu.footer li.strong a{
+    font-family: 'PT Sans', Tahoma, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #37829b;
+}

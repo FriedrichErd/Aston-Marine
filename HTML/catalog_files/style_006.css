@@ -1,0 +1,126 @@
+.astronmarine-catalog-section.default {
+    
+}
+
+.astronmarine-catalog.catalog .sort .property {
+    float: right;
+    margin-left: 25px;
+    padding-right: 30px;
+    background: url("images/sort.png") right 8px no-repeat;
+}
+
+.astronmarine-catalog.catalog .sort .property.active {
+    background-image: url("images/sort-active.png");
+}
+
+.astronmarine-catalog.catalog .sort .property.active a {
+    color: #f2aa8a;
+    border-bottom: 1px dotted #f2aa8a;
+}
+        
+.astronmarine-catalog.catalog .sort a {
+    font-family: "Myriad Pro";
+    color: #8eb6c4;
+    font-size: 16px;
+    border-bottom: 1px dotted #8eb6c4;
+    text-decoration: none;
+}
+
+.astronmarine-catalog-section.default .item {
+    width: 205px;
+    float: left;
+    margin-left: 40px;
+    font-family: "Myriad Pro";
+}
+
+.astronmarine-catalog-section.default .item.no-margin{
+    margin: 0;
+}
+
+.astronmarine-catalog-section.default .item .picture {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 3px 3px 5px rgba(100,100,100,0.4); 
+}
+
+.astronmarine-catalog-section.default .item .name {
+    margin-bottom: 5px;
+}
+
+.astronmarine-catalog-section.default .item .name a {
+    font-size: 18px;
+    color: #3c82ae;
+}
+
+.astronmarine-catalog-section.default .item .price {
+    float: left;
+    font-size: 20px;
+    color: #ea6b25;
+}
+
+.astronmarine-catalog-section.default .item .old_price {
+    float: right;
+    font-size: 20px;
+    color: #a7a9ab;
+    text-decoration: line-through;
+}
+
+.astronmarine-catalog-section.default .item .currency {
+    font-size: 18px;
+}
+
+.astronmarine-catalog-section.default .item .size {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    border-top: 1px solid #f2f2f2;
+}
+
+.astronmarine-catalog-section.default .item .size .height,
+.astronmarine-catalog-section.default .item .size .width,
+.astronmarine-catalog-section.default .item .size .length {
+    float: left;
+    font-size: 12px;
+    color: #87adbb;
+    height: 33px;
+    line-height: 33px;
+}
+
+.astronmarine-catalog-section.default .item .size .height,
+.astronmarine-catalog-section.default .item .size .width {
+    border-right: 1px solid #f2f2f2;
+}
+
+.astronmarine-catalog-section.default .item .size .height {
+    width: 36px;
+    padding-left: 15px;
+    background: url("images/arrow-h.png") left center no-repeat;
+}
+
+.astronmarine-catalog-section.default .item .size .width {
+    width: 42px;
+    padding-left: 38px;
+    background: url("images/arrow-w.png") 8px center no-repeat;
+}
+
+.astronmarine-catalog-section.default .item .size .length {
+    width: 42px;
+    padding-left: 30px;
+    background: url("images/arrow-l.png") 5px center no-repeat;
+}
+
+#astronmarine-next-page {
+    font-size: 14px;
+    color: #8eb6cf;
+    text-decoration: underline;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+
+#astronmarine-next-page img {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: -30px;
+}

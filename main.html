@@ -326,13 +326,40 @@ $(document).ready(function() {
 
 
 <footer>
+
+<div id="scrollup">&nbsp;&nbsp;Наверх&nbsp;&nbsp;<img alt="Прокрутить вверх" src="images/up.png"></div>
+<script type='text/javascript' src='js/scrollup.js'>
+  jQuery( document ).ready(function() {
+  jQuery('#scrollup img').mouseover( function(){
+    jQuery( this ).animate({opacity: 0.65},100);
+  }).mouseout( function(){
+    jQuery( this ).animate({opacity: 1},100);
+  }).click( function(){
+    window.scroll(0 ,0); 
+    return false;
+  });
+
+  jQuery(window).scroll(function(){
+    if ( jQuery(document).scrollTop() > 0 ) {
+      jQuery('#scrollup').fadeIn('fast');
+    } else {
+      jQuery('#scrollup').fadeOut('fast');
+    }
+  });
+});
+</script>
+
  <div id="space-for-footer"></div>
 	<div id="footer-wrapper">
             <div id="footer-menu-wrapper">
                 <div id="footer-menu">
                     <div id="footer-menu-company-name">© ООО «Astrone Marine», 2014</div>
                     <div id="footer-menu-address">
-                        <i>Санкт-Петербург, Октябрьская наб., дом 32</i><br>Телефон: +7 (812) 715-17-57  +7 (812) 973-25-91<br>+7 (921) 091-07-16<br>E-mail: <a href="mailto:E-mail:%20info@astrone-mariine.ru">info@astrone-mariine.ru</a>                    </div>
+                        <i>Санкт-Петербург, Октябрьская наб., дом 32</i><br>Телефон: +7 (812) 715-17-57  +7 (812) 973-25-91<br>+7 (921) 091-07-16<br>E-mail: <a href="mailto:E-mail:%20info@astrone-mariine.ru">info@astrone-mariine.ru</a>                    
+<div>
+  <input class="search" type="text" name="search" value="" placeholder="&nbsp;поиск по артикулу">
+</div>
+                        </div>
                     <div id="footer-menu-about">
                             <div class="astonmarine-menu footer">
         <ul>

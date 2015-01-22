@@ -1,0 +1,34 @@
+.astronmarine-satalog-section-list.default {
+    font-family: "Myriad Pro";
+}
+
+.astronmarine-satalog-section-list.default .header {
+    font-size: 18px;
+    color: #8eb6c4;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.astronmarine-satalog-section-list.default table {
+    width: 100%;
+}
+
+.astronmarine-satalog-section-list.default table td {
+    height: 30px;
+    vertical-align: central;
+}
+
+.astronmarine-satalog-section-list.default .section {
+    text-align: left;
+}
+
+.astronmarine-satalog-section-list.default .section a {
+    font-size: 14px;
+    color: #8eb6c4;
+}
+
+.astronmarine-satalog-section-list.default .count {
+    font-size: 18px;
+    text-align: right;
+    color: #eb8a58;
+}

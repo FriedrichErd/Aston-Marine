@@ -1,0 +1,383 @@
+/* 
+////////////////////
+// СТРУКТУРА
+////////////////////
+*/
+html { 
+    width:100%;
+    height: 100%;
+}
+
+body {
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family: 'PT Sans', Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+#page-wrapper {	
+    min-height:100%;	  
+    margin: 0 auto -390px;
+    min-width: 1298px;
+}
+
+* html #page-wrapper {
+    height: 100%;
+}
+
+#main-wrapper {
+    height: 700px;
+    background: url("images/main-wrapper.jpg") no-repeat center;
+}
+
+#header-wrapper {
+    height: 150px;
+    background: url("images/header-wrapper.jpg") repeat-x;  
+}
+
+#main,
+#header {
+    width: 1298px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#main {
+    height: 700px;
+}
+
+#header {
+    height: 150px;
+}
+
+#main-logo,
+#header-logo {
+    width: 183px;
+    height: 85px;
+    position: absolute;
+    top: 30px;
+}
+
+#main-menu,
+#header-menu {
+    position: absolute;
+    left: 185px;
+    top: 52px;
+}
+
+#main-contacts,
+#header-contacts {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 130px;
+    height: 55px;
+    border: 2px dotted #fff;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+#main-contacts a,
+#header-contacts a {
+    font-family: 'PT Sans', Tahoma, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    padding-left: 30px;
+}
+
+#main-text {
+    position: absolute;
+    left: 600px;
+    top: 260px;
+    font-size: 72px;
+    font-family: Myriad Pro, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#main-text small {
+    font-size: 36px;
+}
+
+#content-wrapper {
+}
+
+#content {
+    margin: 0 auto;
+    width: 1298px;
+}
+
+#workarea {
+    width: 100%;
+}
+
+#right-column{
+    display: none;
+}
+
+
+#workarea.show-right {
+    width: 919px;
+    float: left;
+    padding-right: 15px;
+}
+
+#right-column.show-right {
+    display: block;
+    width: 364px;
+    float: right
+}
+
+
+#footer-wrapper, #space-for-footer  {
+    height: 390px;
+    min-width: 1298px;
+}
+
+#footer-menu-wrapper {
+    height: 340px;
+    background: #ebebeb url("images/footer-menu-wrapper.jpg") top repeat-x;
+}
+
+#footer-info-wrapper {
+    height: 50px;
+    background: #bbbdc0 url("images/footer-info-wrapper.png") top repeat-x;
+}
+
+#footer-menu,
+#footer-info {
+    width: 1298px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#footer-menu {
+    height: 340px;
+}
+
+#footer-info {
+    height: 50px;
+}
+
+#footer-menu-company-name {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 300px;
+    text-align: right;
+    color: #a6a7a9;
+}
+
+#footer-menu-address {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    width: 300px;
+    line-height: 15px;
+    text-align: right;
+    color: #808285;
+}
+
+#footer-menu-address a {
+    color: #808285;    
+}
+
+#footer-menu-about {
+    position: absolute;
+    top: 60px;
+    left: 350px;   
+}
+
+#footer-menu-catalog {
+    position: absolute;
+    top: 60px;
+    left: 540px;   
+}
+
+#footer-menu-service {
+    position: absolute;
+    top: 60px;
+    left: 730px;   
+}
+
+#footer-menu-social-networks {
+    position: absolute;
+    top: 60px;
+    right: 35px;
+    width: 320px;
+}
+
+
+#footer-info-created {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    height: 23px;
+    line-height: 23px;
+    padding-right: 35px;
+    background: url("images/created.png") right no-repeat;
+}
+
+#footer-info-created a {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+#footer-info-copying {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    line-height: 12px;
+    color: #fff;
+    text-align: right;
+}
+
+#panel {
+    min-width: 1298px;
+}
+
+#pagetitle {
+    color: #8eb6c4;
+    font-family: Myriad Pro, sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 80px 0 40px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Блок социальные сети */
+.astronmarine-social-networks {
+    border: 1px dotted #92bbc8;
+    background: #f8f8f8;
+    padding: 20px;
+    color: #b3b4b8;
+}
+
+.astronmarine-social-networks .head {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.astronmarine-social-networks .text {
+    margin-top: 20px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.astronmarine-social-networks .text img {
+    margin: 8px 8px 0 0;
+}
+
+/* Блок технологии производства */
+.astronmarine-tech-production  {
+    margin: 10px 0;
+}
+.astronmarine-tech-production .head {
+    height: 60px;
+    color: #fff;
+    background: #488ba0;
+    font-size: 18px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.astronmarine-tech-production .body {
+    width: 364px;
+    height: 280px;
+    background: url("images/tech-production.jpg") no-repeat;
+}
+
+/* Блок как выбрать катера и лодки */
+.astronmarine-how-to-choose {
+    height: 48px;
+    margin: 25px 0;
+    background: #a9adb0 url("images/how-block-bg.png") 20px center no-repeat;
+    padding-left: 70px;
+}
+
+.astronmarine-how-to-choose a{
+    font-size: 18px;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-family: Myriad Pro, sans-serif;
+}
+
+/* Кнопки карусели */
+.astronmarine-carousel-prev,
+.astronmarine-carousel-next {
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 30px;
+}
+    
+.astronmarine-carousel-prev {
+    background: url("images/carousel-button.png") no-repeat;
+    right: 30px;
+}
+
+.astronmarine-carousel-next {
+    background: url("images/carousel-button.png") no-repeat -30px 0;
+    right: 0;   
+}
+
+.astronmarine-carousel-prev:hover {
+    background-position: 0 -30px;
+}
+
+.astronmarine-carousel-next:hover {
+    background-position: -30px -30px;    
+}
+
+/* Блок акции */
+
+.astronmarine-action {
+    height: 240px;
+    background: #f19f71;
+    border-radius: 5px;
+    position: relative;
+}
+
+.astronmarine-action .name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 40px;
+    left: 15px;
+}
+
+.astronmarine-action .discount {
+    width: 190px;
+    height: 80px;
+    background: #a9adb0;
+    font-size: 72px;
+    line-height: 80px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 85px;
+    left: -20px;
+    padding-left: 10px;
+}
+
+.astronmarine-action .action {
+    font-size: 72px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -11px;
+    right: 0;
+    opacity: 0.3;
+}

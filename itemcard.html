@@ -1,0 +1,542 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<title>Карточка товара</title>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="css/style.css">
+
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+
+<!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+
+<link rel="stylesheet" href="owl-carousel/owl.transitions.css">
+ 
+<!--  jQuery 1.7+  -->
+<script src="js/jquery-1.11.2.js"></script>
+ 
+<!-- Include js plugin -->
+<script src="owl-carousel/owl.carousel.js"></script>
+
+<script>
+
+$(document).ready(function() {
+ 
+  $("#news-slider").owlCarousel({
+ 
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+ stopOnHover: true,
+      items : 1,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+
+ 
+  });
+ 
+});
+
+</script>
+
+<script>
+
+$(document).ready(function() {
+ 
+  $("#trust-slider").owlCarousel({
+ 
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+    stopOnHover: true,
+      items : 1,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+
+ 
+  });
+ 
+});
+
+</script>
+
+<script>
+$(document).ready(function() {
+ 
+  $("#slider-models").owlCarousel({
+ 
+      
+      pagination : false,  
+      navigation : true, // Show next and prev buttons
+
+      items : 3,
+      loop : true,
+      autoPlay: false, //Set AutoPlay to 3 seconds
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+ 
+  });
+ 
+});
+ </script>
+
+<script>
+$(document).ready(function() {
+ 
+  $("#slider-store").owlCarousel({
+ 
+      autoPlay: 10000000, //Set AutoPlay to 3 seconds
+ pagination : false,  
+      navigation : true, // Show next and prev buttons
+
+      items : 4,
+      loop : true,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+ 
+  });
+ 
+});
+ </script>
+
+<script>
+$(document).ready(function() {
+ 
+  $("#item-pics-slider").owlCarousel({
+ 
+      autoPlay: 10000000, //Set AutoPlay to 3 seconds
+ pagination : false,  
+      nav : true, // Show next and prev buttons
+
+      items : 4,
+      margin : 120,
+      merge : true,
+      loop : true,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+ 
+  });
+ 
+});
+ </script>
+
+
+</head>
+
+<body>
+<header id="page-wrapper">
+	<div id="main-wrapper-other">
+		<div id="main-other">
+<nav>
+		<div id="main-logo"><img src="images/logo-am.png"></div>
+		<ul class="mainmenu-other">
+			<li><a href="http://about/">О компании</a></li>
+  			<li><a href="http://catalog/">Каталог</a></li>
+			<li><a href="http://actions/">Акции</a></li>
+            <li><a href="http://news/">Новости</a></li>
+            <li><a href="http://dealers/">Наши дилеры</a></li>
+            <li class="last"><a href="http://contacts/">Контакты</a></li>
+   		</ul>
+		
+		<div class="phone">
+        <sup>812</sup> 715-15-57<br><a href="#">Все города РФ</a> </div>
+    	
+</nav>	
+		</div>
+	</div>
+</header>
+
+
+<section сlass="content">
+<div class="main-cont">
+
+<h1>Корвет 750 А Стандарт</h1>
+
+<div class="astronmarine-catalog catalog">
+
+<div class="catalog-sidebar">
+  <div class="filter">
+            
+<div class="filter_vertical blue">
+  <div class="filter_section m4">
+    <form name="_form" action="/catalog/" method="get" class="smartfilter">
+                                        
+                      <div class="filter_container">
+          <span class="filter-header">Тип катера</span>
+          <div class="filter_block">
+              <span class="">
+              <input value="Y" onclick="smartFilter.click(this)" type="checkbox">
+              <label>Пластиковые катера</label>
+            </span>
+
+                          <span class="">
+              <input value="Y" onclick="smartFilter.click(this)" type="checkbox">
+              <label>Алюминевые катера</label>
+            </span>
+
+
+              <span class="">
+              <input value="Y" onclick="smartFilter.click(this)" type="checkbox">
+              <label>Катера серии PRO</label>
+            </span>
+
+
+              <span class="">
+              <input value="Y" onclick="smartFilter.click(this)" type="checkbox">
+              <label>Катера марки РИБ Марин</label>
+            </span>
+
+                      </div>
+        </div>
+                                      <div style="clear: both;"></div>
+      <div class="filter_control_section">
+
+        <span class="filter-header">Цена</span>
+
+<div id="slider-range"></div>
+<p>
+  <label for="amount">Укажите размах цен:</label>
+  <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;" />
+</p>
+<script type="text/javascript">
+  $("#slider-range").slider({
+  range: true,
+  min: 0,
+  max: 500,
+  values: [ 75, 300 ],
+  slide: function( event, ui ) {
+    $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+  }
+});
+$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+    " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+</script> <!-- взято с http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D0%BB%D0%B7%D1%83%D0%BD%D0%BE%D0%BA_UI -->
+      </div>
+    </form>
+    <div style="clear: both;"></div>
+  </div>
+</div><br><br>
+
+   <div class="astronmarine-satalog-section-list default">
+    <span class="filter-header">Категории</span>
+    <table>
+    <tbody>
+      <tr>
+        <td class="section"><a href="#">Гоночные</a> </td>
+        <td class="count"> <span>(1)</span>        </td>
+      </tr>
+      <tr>
+        <td class="section"><a href="#">Для охоты и рыбалки</a></td>
+        <td class="count"> <span>(1)</span>        </td>
+      </tr>
+      <tr>
+      <td class="section"><a href="#">Прогулочные</a></td>
+      <td class="count"> <span>(11)</span>       </td>
+    </tr>
+    </tbody>
+    </table>
+
+      <div style="clear: both;"></div>
+    </div>
+</div>
+
+<div style="clear: both;"></div>
+
+<div class="offers-catalog">
+  <div class=""><span class="filter-header">Пакетные предложения</span> 
+  <div class="all-btn"><a href="#"><i>все</i></a></div></div>
+  <div class="offers-catalog-item">
+  
+      <div class="item2-pic"><img src="images/kater-1.jpg" alt="Катер"></div>
+      <div class="item2-name"><a href="#">№1 с катером "Корвет 750А"</a></div>
+      <div class="offers-catalog-icons">
+        <div class="item-icon"><img src="images/icon-1.png" alt="Катер"></div>
+        <div class="item-icon"><img src="images/icon-2.png" alt="Мотор"></div>
+        <div class="item-icon"><img src="images/icon-3.png" alt="Прицеп"></div>
+      </div>
+      <div class="offers-catalog-more">ПОДРОБНЕЕ</div>
+
+  </div>
+
+  <div class="offers-catalog-item">
+  
+      <div class="item2-pic"><img src="images/kater-1.jpg" alt="Катер"></div>
+      <div class="item2-name"><a href="#">№1 с катером "Корвет 750А"</a></div>
+      <div class="offers-catalog-icons">
+        <div class="item-icon"><img src="images/icon-1.png" alt="Катер"></div>
+        <div class="item-icon"><img src="images/icon-2.png" alt="Мотор"></div>
+        <div class="item-icon"><img src="images/icon-3.png" alt="Прицеп"></div>
+      </div>
+      <div class="offers-catalog-more">ПОДРОБНЕЕ</div>
+
+  </div>
+
+</div>
+</div>
+
+
+
+
+
+<div class="content">
+
+    <div class="astronmarine-catalog-section default">
+       
+<div class="pics-area">
+  <div class="main-img"><img src="images/11.jpg"></div>
+
+
+<div id="item-pics-slider">
+    
+            <div class="item item4">
+      <div class="item4-pic"><img src="images/10.jpg" alt="###"></div>
+            </div>
+    
+            <div class="item item4">
+      <div class="item4-pic"><img src="images/12.jpg" alt="###"></div>
+            </div>
+
+            <div class="item item4">
+      <div class="item4-pic"><img src="images/13.jpg" alt="###"></div>
+            </div>
+
+            <div class="item item4">
+      <div class="item4-pic"><img src="images/14.jpg" alt="###"></div>
+            </div> 
+
+            <div class="item item4">
+      <div class="item4-pic"><img src="images/10.jpg" alt="###"></div>
+            </div>
+    
+            <div class="item item4">
+      <div class="item4-pic"><img src="images/12.jpg" alt="###"></div>
+            </div>
+</div>
+</div>
+
+<div class="descr">
+  <div class="descr-price">300 000 P.
+  <span class="zak-btn"><a href="#">заказать</a></span></div>
+  Надежный катер для рыбалки и охоты. <br>
+  Возможность использования двигателя от 20л.с. до 60л.с. и перевозки на легком трейлере позволяют использовать катер на труднодоступных водоемах. <br>
+  Неприхотлив и практически не требует техобслуживания. <br>
+
+  <span class="descr-head">Характеристики</span>
+  <ul>
+  <li>Длина 4,8 м</li>
+  <li>Ширина 1,95 м</li>
+  <li>Высота 1,4 м</li>
+  <li>Мощность ПД 20-50 л.с.</li>
+  <li>Высота транца 0,38-0.52 м</li>
+  <li>Осадка по килю 0,3 м</li>
+  <li>Килеватность на миделе 15</li>
+  <li>Килеватность на транце 13</li>
+  </ul>
+
+  <span class="descr-head">Стандартная комплектация:</span>
+  <ul>
+  <li>Мягкие кресла судоводителя и пассажира на стойках </li>
+  <li>Ветровое стекло </li>
+  <li>Носовой и кормовые рундуки </li>
+  </ul>
+</div>
+
+ <div style="clear: both;"></div>
+
+<div class="add-descr">
+  <span class="descr-head">Возможна дополнительная комплектация:</span>
+  <ul class="descr-row">
+  <li>Редуктор Т-67</li>
+  <li>Штур тросс Т01-15</li>
+  <li>Рулевое колесо VLN32</li>
+  <li>Насос осушит. 500GPH</li>
+  <li>Ящик аккумуляторный</li>
+  <li>Выход помпы</li>
+  </ul>
+
+  <ul class="descr-row">
+  <li>Выключатель массы</li>
+  <li>Панель переключателей</li>
+  <li>Тент ходовой с установкой</li>
+  <li>Подушка на заднее сид.</li>
+  <li>Ходовые огни с установкой</li>
+  <li>Установка+подключение</li>
+  </ul>
+
+</div>
+
+<div style="clear: both;"></div>
+
+            <span class="show-more"><a href="#">Назад к списку товаров</a></span>
+        </div>
+</div>
+  <div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+<!-- /workarea -->
+
+
+<div class="clear"></div>
+
+</div>   
+</section>
+
+
+<footer>
+ <div id="space-for-footer"></div>
+	<div id="footer-wrapper">
+            <div id="footer-menu-wrapper">
+                <div id="footer-menu">
+                    <div id="footer-menu-company-name">© ООО «Astrone Marine», 2014</div>
+                    <div id="footer-menu-address">
+                        <i>Санкт-Петербург, Октябрьская наб., дом 32</i><br>Телефон: +7 (812) 715-17-57  +7 (812) 973-25-91<br>+7 (921) 091-07-16<br>E-mail: <a href="mailto:E-mail:%20info@astrone-mariine.ru">info@astrone-mariine.ru</a>                  <div>
+  <input class="search" type="text" name="search" value="" placeholder="&nbsp;поиск по артикулу">
+</div>  </div>
+                    <div id="footer-menu-about">
+                            <div class="astonmarine-menu footer">
+        <ul>
+        
+            <li class="strong">
+                <a href="#">О компании</a>
+            </li>
+        
+            <li>
+                <a href="#">О нас</a>
+            </li>
+        
+            <li>
+                <a href="#">Новости</a>
+            </li>
+        
+            <li>
+                <a href="#">Производство</a>
+            </li>
+        
+            <li>
+                <a href="#">Вакансии</a>
+            </li>
+        
+            <li>
+                <a href="#">Статьи</a>
+            </li>
+        
+            <li class="strong">
+                <a href="#">Контакты</a>
+            </li>
+                </ul>
+    </div>
+                    </div>
+                    <div id="footer-menu-catalog">
+                                <div class="astonmarine-menu footer">
+        <ul>
+        
+            <li class="strong">
+                <a href="#">Каталог</a>
+            </li>
+        
+            <li>
+                <a href="#">Моторные лодки</a>
+            </li>
+        
+            <li>
+                <a href="#">Катера</a>
+            </li>
+        
+            <li>
+                <a href="#">Моторы</a>
+            </li>
+        
+            <li>
+                <a href="#">Прицепы</a>
+            </li>
+        
+            <li>
+                <a href="#">Комплектующие</a>
+            </li>
+        
+            <li>
+                <a href="#">Эхолоты и навигаторы</a>
+            </li>
+        
+            <li>
+                <a href="#">Отзывы</a>
+            </li>
+        
+            <li>
+                <a href="#">Пакетное предложение</a>
+            </li>
+        
+            <li>
+                <a href="#">Прайс-лист</a>
+            </li>
+                </ul>
+    </div>
+                    </div>
+                    <div id="footer-menu-service">
+                                <div class="astonmarine-menu footer">
+        <ul>
+        
+            <li class="strong">
+                <a href="#">Сервис</a>
+            </li>
+        
+            <li>
+                <a href="#">Сервис по гарантии</a>
+            </li>
+        
+            <li>
+                <a href="#">Постгарантийный сервис</a>
+            </li>
+        
+            <li class="strong">
+                <a href="#">Наши дилеры</a>
+            </li>
+        
+            <li class="strong">
+                <a href="#">Акции</a>
+            </li>
+                </ul>
+    </div>
+                    </div>
+                    <div id="footer-menu-social-networks">
+                        <div class="astronmarine-social-networks">
+    <div class="soc-head">Мы в социальных сетях</div>
+    <div class="text">Следите за нашими новостями<br>в социальных сетях<br>
+    <a href=""><img src="images/icon-facebook.jpg"></a>
+    <a href=""><img src="images/icon-vk.jpg"></a>
+    <a href=""><img src="images/icon-twitter.jpg"></a>
+    <a href=""><img src="images/icon-youtube.jpg"></a>
+    </div>
+</div>                    </div>
+                </div>
+            </div>
+            <div id="footer-info-wrapper">
+                <div id="footer-info">
+                    <div id="footer-info-created"><a href="#">Создание сайта</a></div>
+                    <div id="footer-info-copying">
+                        Печать и публикация фотографий только<br>
+с разрешения Astron-Marine                    </div>
+                </div>
+            </div>
+        </div>
+  	</footer>  
+</body>
+</html>

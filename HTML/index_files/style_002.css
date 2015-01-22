@@ -1,0 +1,58 @@
+.astronmarine-news-list.index-news {
+    background: #a9adb0;
+    width: 290px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.astronmarine-news-list.index-news .header{
+    height: 60px;
+    color: #fff;
+    line-height: 60px;
+    font-family: Myriad Pro, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 60px;
+}
+
+.astronmarine-news-list.index-news ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} 
+
+.astronmarine-news-list.index-news li {
+    float: left;
+}
+
+
+.astronmarine-news-list.index-news li .name {
+    height: 115px;
+    background: #e3e5e6;
+}
+
+.astronmarine-news-list.trust-us li .text {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+#index-prev, #index-next {
+    width: 10px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    cursor: pointer;
+}
+
+#index-prev {
+    background: url("images/prev-news.png");
+    left: 230px;
+}
+
+#index-next {
+    background: url("images/next-news.png");
+    left: 260px;
+}
